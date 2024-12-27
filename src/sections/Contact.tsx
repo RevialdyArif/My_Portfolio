@@ -8,7 +8,7 @@ export const ContactSection = () => {
           <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center">
             <div>
               <h2 className="font-serif text-2xl md:text-3xl">
-                Let's create an amazing project together
+                Let’s create an amazing project together
               </h2>
               <p className="text-sm md:text-base mt-2">
                 Collaboration is where magic happens. Let’s bring our ideas to

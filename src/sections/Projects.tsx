@@ -55,14 +55,14 @@ export const ProjectsSection = () => {
       <div className="container">
         <div className="flex justify-center">
           <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-center bg-clip-text text-transparent">
-            Things I've Built
+            Things I’ve Built
           </p>
         </div>
         <h2 className="font-serif text-3xl md:text-5xl text-center mt-6">
           My Latest Work
         </h2>
         <p className="text-center md:text-lg lg:text-xl text-white/60 mt-4 max-w-md mx-auto">
-          This is some of my project that I've done and currently working on.
+          This is some of my project that I’ve done and currently working on.
         </p>
         <div className="flex flex-col mt-10 md:mt-20 gap-20">
           {portfolioProjects.map((project, projectIndex) => (

@@ -66,16 +66,16 @@ export const HeroSection = () => {
             <div className="bg-green-500 size-2.5 rounded-full relative">
               <div className="bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
             </div>
-            <div className="text-sm font-semibold">Let's Collaborate!</div>
+            <div className="text-sm font-semibold">Let’s Collaborate!</div>
           </div>
         </div>
 
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-            Hey There, It's Me Revialdy Arif
+            Hey There, It’s Me Revialdy Arif
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
-            I'm a Mechatronics and AI student with a strong interest in technology, especially in
+            I’m a Mechatronics and AI student with a strong interest in technology, especially in
             <span className="block md:inline"> </span>
             <span className="mt-2 text-center md:mt-0 md:inline-block">
               <TypeAnimation
@@ -105,7 +105,7 @@ export const HeroSection = () => {
           <a href="https://www.linkedin.com/in/revialdyarif/">
             <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl transition duration-300 hover:bg-gray-900 hover:border-white/15 hover:text-white hover:shadow-lg cursor-pointer">
               <span>👋</span>
-              <span className="font-semibold">Let's Connect</span>
+              <span className="font-semibold">Let’s Connect</span>
             </button>
           </a>
         </div>

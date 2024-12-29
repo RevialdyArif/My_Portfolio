@@ -96,7 +96,7 @@ export const HeroSection = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <a href="https://drive.google.com/file/d/1JQx2vAQwGAAucEpdr9FgD83IqeZbCVvN/view?usp=drive_link">
+         <a href="https://drive.google.com/file/d/1JQx2vAQwGAAucEpdr9FgD83IqeZbCVvN/view?usp=sharing">
             <button className="inline-flex px-6 h-12 rounded-xl items-center gap-2 border border-white/15 transition duration-300 hover:bg-white hover:text-gray-900 hover:shadow-lg cursor-pointer">
               <span className="font-semibold">Download CV</span>
               <ArrowDown className='size-4' />

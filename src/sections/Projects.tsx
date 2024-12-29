@@ -17,7 +17,7 @@ const portfolioProjects = [
       { title: "Implemented MQTT for data communication." },
       { title: "Programmed using Wokwi and Python." },
     ],
-    link: "https://github.com/RevialdyArif",
+    link: "https://github.com/RevialdyArif/Fire-Detection",
     image: FireDetectionCV,
   },
   {
@@ -29,7 +29,7 @@ const portfolioProjects = [
       { title: "Designed and developed the electrical wiring." },
       { title: "Created the robot program using Arduino IDE" },
     ],
-    link: "https://github.com/RevialdyArif",
+    link: "https://github.com/RevialdyArif/Line-Follower-and-Firefighter-Robot",
     image: RobotLele,
   },
   {
@@ -44,7 +44,7 @@ const portfolioProjects = [
         title: "Utilized Java for development and SQL for database management.",
       },
     ],
-    link: "https://github.com/RevialdyArif",
+    link: "https://github.com/RevialdyArif/AquaSanity",
     image: AquaSanity,
   },
 ];

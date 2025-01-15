@@ -1,6 +1,8 @@
 import FireDetectionCV from "../assets/images/firedetectioncv.jpg";
 import RobotLele from "../assets/images/robotlele.jpg";
 import AquaSanity from "../assets/images/aquasanity.png";
+import Alzheimer from "../assets/images/Alzheimer.png";
+import PersonalPortfolio from "../assets/images/portfolio.png";
 import Image from "next/image";
 import CheckCircleIcon from "../assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "../assets/icons/arrow-up-right.svg";
@@ -9,31 +11,46 @@ import grainImage from "../assets/images/grain.jpg";
 const portfolioProjects = [
   {
     id: 1, // Tambahkan ID unik
+    company: "Programming",
+    year: "2025",
+    title: "Alzheimer Detection",
+    results: [
+      { title: "Developed an Alzheimer Detection Website using Streamlit and Python" },
+      { title: "Implemented the YOLO model for Alzheimer detection via MRI images." },
+      { title: "Integrated image processing features: edge detection, segmentation, and histogram analysis." },
+    ],
+    link: "https://github.com/RevialdyArif/Alzheimer-Detection",
+    image: Alzheimer,
+  },
+  {
+    id: 2, // Tambahkan ID unik
+    company: "Programming",
+    year: "2024",
+    title: "Website Portfolio",
+    results: [
+      { title: "Developed portfolio website using React, TypeScript, and Next.js" },
+      { title: "Designed a responsive user interface for seamless viewing across devices" },
+      { title: "Showcased projects, skills, and experiences in an interactive and visually appealing layout" },
+    ],
+    link: "https://revialdyarif.vercel.app/",
+    image: PersonalPortfolio,
+  },
+  {
+    id: 3, // Tambahkan ID unik
     company: "Computer Vision",
     year: "2024",
-    title: "Fire Detection System With Esp 32",
+    title: "Fire Alarm System",
     results: [
-      { title: "Developed real-time fire detection with OpenCV and ESP32" },
-      { title: "Implemented MQTT for data communication." },
-      { title: "Programmed using Wokwi and Python." },
+      { title: "Developed a real time Python based fire detection using OpenCV." },
+      { title: "Integrated MQTT as a communication data." },
+      { title: "Programmed ESP32 to communicate with the broker." },
+      { title: "Created program code using Python." },
     ],
-    link: "https://github.com/RevialdyArif",
+    link: "https://github.com/RevialdyArif/Fire-Detection",
     image: FireDetectionCV,
   },
   {
-    id: 2,
-    company: "Robotics",
-    year: "2024",
-    title: "Line Follower and FireFighter Robot",
-    results: [
-      { title: "Designed and developed the electrical wiring." },
-      { title: "Created the robot program using Arduino IDE" },
-    ],
-    link: "https://github.com/RevialdyArif",
-    image: RobotLele,
-  },
-  {
-    id: 3,
+    id: 4,
     company: "Programming",
     year: "2023",
     title: "Aqua Sanity Desktop App",
@@ -44,7 +61,7 @@ const portfolioProjects = [
         title: "Utilized Java for development and SQL for database management.",
       },
     ],
-    link: "https://github.com/RevialdyArif",
+    link: "https://github.com/RevialdyArif/AquaSanity",
     image: AquaSanity,
   },
 ];

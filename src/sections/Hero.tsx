@@ -24,14 +24,8 @@ export const HeroSection = () => {
         <div className="size-[1020px] hero-ring"></div>
         <div className="size-[1220px] hero-ring"></div>
 
-        <HeroOrbit size={800} rotation={-72}> 
-          <StarIcon className='size-28 text-emerald-300' />
-        </HeroOrbit>
         <HeroOrbit size={550} rotation={20}>
           <StarIcon className='size-12 text-emerald-300' />
-        </HeroOrbit>
-        <HeroOrbit size={590} rotation={98}>
-          <StarIcon className='size-8 text-emerald-300' />
         </HeroOrbit>
         <HeroOrbit size={430} rotation={-14}>
           <SparkleIcon className='size-8 text-emerald-300/20' />
@@ -96,7 +90,7 @@ export const HeroSection = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <a href="https://drive.google.com/file/d/1JQx2vAQwGAAucEpdr9FgD83IqeZbCVvN/view?usp=drive_link">
+          <a href="https://drive.google.com/file/d/1AkngdSkegvdJqWvGx0gSMm97p3GVoqZ9/view?usp=sharing">
             <button className="inline-flex px-6 h-12 rounded-xl items-center gap-2 border border-white/15 transition duration-300 hover:bg-white hover:text-gray-900 hover:shadow-lg cursor-pointer">
               <span className="font-semibold">Download CV</span>
               <ArrowDown className='size-4' />

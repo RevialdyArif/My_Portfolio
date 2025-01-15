@@ -74,22 +74,22 @@ const tools = [
 
 const Enthusiast = [
   {
-    title: "Front-End Engineer",
+    title: "Front-End Developer",
     left: "50%",
     top: "30%",
   },
   {
-    title: "Machine Learning Enthusiast",
+    title: "Machine Learning Engineer",
     left: "5%",
     top: "5%",
   },
   {
-    title: "Data Analyst Enthusiast",
+    title: "Data Analyst",
     left: "50%",
     top: "5%",
   },
   {
-    title: "Data Scientist Enthusiast",
+    title: "Data Scientist",
     left: "10%",
     top: "35%",
   },
@@ -99,7 +99,12 @@ const Enthusiast = [
     top: "75%",
   },
   {
-    title: "Artificial Intelligence Enthusiast",
+    title: "Artificial Intelligence Engineer",
+    left: "0%",
+    top: "55%",
+  },
+  {
+    title: "Software Development",
     left: "0%",
     top: "55%",
   },

@@ -45,7 +45,7 @@ export const Header = () => {
 
   return (
     <div className="flex justify-center items-center fixed top-3 w-full z-50">
-      <nav className="flex gap-2 p-2 border border-white/15 rounded-full backdrop-blur-md bg-white/10">
+      <nav className="flex lg:gap-2 lg:p-2 gap-1 p-0.5 border border-white/15 rounded-full backdrop-blur-md bg-white/10">
         <a
           href="#hero"
           onClick={(e) => handleNavClick(e, '#hero')}

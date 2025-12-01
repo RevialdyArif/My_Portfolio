@@ -1,4 +1,7 @@
+"use client";
+
 import ArrowUpRight from "../assets/icons/arrow-up-right.svg";
+import { motion } from "framer-motion";
 
 const footerLinks = [
   {

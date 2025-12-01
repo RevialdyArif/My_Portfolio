@@ -74,11 +74,6 @@ const tools = [
 
 const Enthusiast = [
   {
-    title: "Front-End Developer",
-    left: "50%",
-    top: "30%",
-  },
-  {
     title: "Machine Learning Engineer",
     left: "5%",
     top: "5%",
@@ -104,7 +99,7 @@ const Enthusiast = [
     top: "55%",
   },
   {
-    title: "Software Development",
+    title: "Software Engineer",
     left: "0%",
     top: "55%",
   },
@@ -131,84 +126,115 @@ export const AboutSection = () => {
   return (
     <div className="py-20 lg:py-28">
       <div className="container">
-        <SectionHeader
-          eyebrow="About Me"
-          title="Unveiling The Chapters of Who I Am"
-          description="Discover the journey behind my passions and the skills that shape my story."
-        />
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true, margin: "-100px" }}
+        >
+          <SectionHeader
+            eyebrow="About Me"
+            title="Unveiling The Chapters of Who I Am"
+            description="Discover the journey behind my passions and the skills that shape my story."
+          />
+        </motion.div>
         <div className="mt-20 flex flex-col gap-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5">
-            <Card className="h-[330px] md:col-span-2 relative">
-              <CardHeader
-                title="This Is Me"
-                description="Every picture tells a story, and this one is mine."
-              />
-              <div
-                className="w-56 -mt-10 lg:-mt-12 mx-auto relative"
-                onMouseMove={handleMouseMove}
-                onMouseLeave={handleMouseLeave}
-              >
-                <Image
-                  src={MyPhoto}
-                  alt="My Photo"
-                  className="transition-transform transform scale-100 grayscale hover:grayscale-0 hover:scale-110"
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true, margin: "-50px" }}
+              className="md:col-span-2"
+            >
+              <Card className="h-[330px] relative">
+                <CardHeader
+                  title="This Is Me"
+                  description="Every picture tells a story, and this one is mine."
                 />
-                {showPopup && (
-                  <motion.div
-                    className="absolute bg-gray-900 text-white text-sm px-3 py-1 rounded-md whitespace-nowrap"
-                    style={{ top: popupPosition.y + 10, left: popupPosition.x + 10 }}
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.8 }}
-                    transition={{ type: "spring", stiffness: 200, damping: 15 }}
-                  >
-                    Hello! This is me.
-                  </motion.div>
-                )}
-              </div>
-            </Card>
-            <Card className="h-[330px] p-0 flex flex-col md:col-span-3">
-              <CardHeader
-                title="Tech Enthusiast"
-                description="Driven to innovate, learn, and make a lasting impact through technology."
-                className=""
-              />
-              <div className="relative flex-1" ref={constrainRef}>
-                {Enthusiast.map((enthusiast) => (
-                  <motion.div
-                    key={enthusiast.title}
-                    className="inline-flex items-center bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 px-2 absolute whitespace-nowrap"
-                    style={{
-                      left: enthusiast.left,
-                      top: enthusiast.top,
-                    }}
-                    drag
-                    dragConstraints={constrainRef}
-                  >
-                    <span className="font-medium text-gray-950">
-                      {enthusiast.title}
-                    </span>
-                  </motion.div>
-                ))}
-              </div>
-            </Card>
-            <Card className="h-[330px] md:col-span-5">
-              <CardHeader
-                title="My Toolbox"
-                description="Explore the technologies and tools that I use to bring my ideas to life."
-                className=""
-              />
-              <ToolboxItems
-                items={tools}
-                className=""
-                itemsWrapperClassName="animate-move-left [animation-duration:30s]"
-              />
-              <ToolboxItems
-                items={tools}
-                className="mt-6"
-                itemsWrapperClassName="animate-move-right [animation-duration:15s]"
-              />
-            </Card>
+                <div
+                  className="w-56 -mt-10 lg:-mt-12 mx-auto relative"
+                  onMouseMove={handleMouseMove}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <Image
+                    src={MyPhoto}
+                    alt="My Photo"
+                    className="transition-transform transform scale-100 grayscale hover:grayscale-0 hover:scale-110"
+                  />
+                  {showPopup && (
+                    <motion.div
+                      className="absolute bg-gray-900 text-white text-sm px-3 py-1 rounded-md whitespace-nowrap"
+                      style={{ top: popupPosition.y + 10, left: popupPosition.x + 10 }}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      exit={{ opacity: 0, scale: 0.8 }}
+                      transition={{ type: "spring", stiffness: 200, damping: 15 }}
+                    >
+                      Hello! This is me.
+                    </motion.div>
+                  )}
+                </div>
+              </Card>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true, margin: "-50px" }}
+              className="md:col-span-3"
+            >
+              <Card className="h-[330px] p-0 flex flex-col">
+                <CardHeader
+                  title="Tech Enthusiast"
+                  description="Driven to innovate, learn, and make a lasting impact through technology."
+                  className=""
+                />
+                <div className="relative flex-1" ref={constrainRef}>
+                  {Enthusiast.map((enthusiast) => (
+                    <motion.div
+                      key={enthusiast.title}
+                      className="inline-flex items-center bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 px-2 absolute whitespace-nowrap"
+                      style={{
+                        left: enthusiast.left,
+                        top: enthusiast.top,
+                      }}
+                      drag
+                      dragConstraints={constrainRef}
+                    >
+                      <span className="font-medium text-gray-950">
+                        {enthusiast.title}
+                      </span>
+                    </motion.div>
+                  ))}
+                </div>
+              </Card>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true, margin: "-50px" }}
+              className="md:col-span-5"
+            >
+              <Card className="h-[330px]">
+                <CardHeader
+                  title="My Toolbox"
+                  description="Explore the technologies and tools that I use to bring my ideas to life."
+                  className=""
+                />
+                <ToolboxItems
+                  items={tools}
+                  className=""
+                  itemsWrapperClassName="animate-move-left [animation-duration:30s]"
+                />
+                <ToolboxItems
+                  items={tools}
+                  className="mt-6"
+                  itemsWrapperClassName="animate-move-right [animation-duration:15s]"
+                />
+              </Card>
+            </motion.div>
           </div>
         </div>
       </div>
